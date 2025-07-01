@@ -1,4 +1,4 @@
-# Vue 3 FullCalendar Example
+# Vue 3 FullCalendar Test task
 
 A calendar application built with Vue 3 Composition API using [FullCalendar](https://fullcalendar.io/) to display and manage events.
 
