@@ -1,13 +1,11 @@
 {
   "calendar": "Calendar",
-  "edit_evetn": "Edit Event",
-  "add_evetn": "Add Event",
-  "form": {
-    "event_name": "event name",
-    "color": "Color",
-    "invalid_values": "Invalid values! Try again!",
-    "discart": "Discart",
-    "cancel": "Cancel",
-    "save": "Save"
-  }
+  "edit_event": "Edit Event",
+  "add_event": "Add Event",
+  "event_name": "event name",
+  "color": "Color",
+  "invalid_values": "Invalid values! Try again!",
+  "discart": "Discart",
+  "cancel": "Cancel",
+  "save": "Save"
 }

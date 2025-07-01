@@ -1,13 +1,11 @@
 {
   "calendar": "Календар",
-  "edit_evetn": "Редагувати подію",
-  "add_evetn": "Додати подію",
-  "form": {
-    "event_name": "назва події",
-    "color": "Колір",
-    "invalid_values": "Не валідні дані!",
-    "discart": "Скасувати",
-    "cancel": "Закрити",
-    "save": "Збеігти"
-  }
+  "edit_event": "Редагувати подію",
+  "add_event": "Додати подію",
+  "event_name": "назва події",
+  "color": "Колір",
+  "invalid_values": "Не валідні дані!",
+  "discart": "Скасувати",
+  "cancel": "Закрити",
+  "save": "Збеігти"
 }

@@ -53,7 +53,7 @@ const form = computed({
       v-model="form.title"
       class="form-input"
       name="event-title"
-      :placeholder="t('form.event_name')"
+      :placeholder="t('event_name')"
       maxlength="30"
     />
 
@@ -72,7 +72,7 @@ const form = computed({
     />
 
     <label class="form-label">
-      {{ t('form.color') }} :
+      {{ t('color') }} :
       <input
         type="color"
         v-model="form.color"
@@ -82,7 +82,7 @@ const form = computed({
     </label>
 
     <p v-if="hasFormError" class="form-error">
-      {{ t('form.invalid_values') }}
+      {{ t('invalid_values') }}
     </p>
 
     <div class="form-actions">
@@ -90,18 +90,18 @@ const form = computed({
         v-if="isEdit"
         @click="onDeleteEvent"
       >
-        {{ t('form.discart') }}
+        {{ t('discart') }}
       </CustomButton>
       <CustomButton
         v-else
         @click="onCloseDialog"
       >
-        {{ t('form.cancel') }}
+        {{ t('cancel') }}
       </CustomButton>
       <CustomButton
         type="submit"
       >
-        {{ t('form.save') }}
+        {{ t('save') }}
       </CustomButton>
     </div>
   </form>

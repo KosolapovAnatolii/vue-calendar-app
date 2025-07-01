@@ -17,7 +17,6 @@ const props = defineProps({
 })
 
 const activeTab = ref(props.currentOption || props.options[0].value)
-console.log('currentOption', props.currentOption)
 
 function handleClick(option) {
   activeTab.value = option.value

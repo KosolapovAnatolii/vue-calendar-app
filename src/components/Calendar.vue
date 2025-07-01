@@ -23,9 +23,10 @@ const isShowDialog = ref(false)
 const isEdit = ref(false)
 const selectedEvent = ref(null)
 const customDialogRef = ref(null)
+const calendarRef = ref(null)
 const hasFormError = ref(false)
 
-const dialogTile = computed(() => isEdit.value ? t('edit_evetn') : t('add_evetn'))
+const dialogTile = computed(() => isEdit.value ? t('edit_event') : t('add_event'))
 const appLang = computed(() => props.userLang === 'uk' ? ukLocale : 'en')
 
 const dialogPosition = reactive({ x: 0, y: 0 })
@@ -94,7 +95,7 @@ function submitForm() {
     selectedEvent.value.setStart(startDateTime);
     selectedEvent.value.setProp('backgroundColor', formData.color);
   } else {
-    const calendarApi = document.querySelector('.fc').__vueParentComponent.ctx.getApi();
+    const calendarApi = calendarRef.value.getApi();
     calendarApi.addEvent({
       id: createEventId(),
       title: formData.title,
@@ -182,7 +183,11 @@ watch(isShowDialog, (newValue) => {
 
 <template>
   <div class="calendar-main">
-    <FullCalendar class="calendar" :options="calendarOptions">
+    <FullCalendar
+      ref="calendarRef"
+      class="calendar"
+      :options="calendarOptions"
+    >
       <template #eventContent="{ event, timeText }">
         <div
           :style="{ backgroundColor: event.backgroundColor}"
