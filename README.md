@@ -1,23 +1,38 @@
+# Vue 3 FullCalendar Example
 
-# FullCalendar Vue 3 Example Project
+A calendar application built with Vue 3 Composition API using [FullCalendar](https://fullcalendar.io/) to display and manage events.
 
-This is a fully-buildable example project for FullCalendar and Vue 3, leveraging [Vite](https://github.com/vitejs/vite).
+[DEMO Link](https://kosolapovanatolii.github.io/vue-calendar-app/)
+---
 
+## Features
 
-## Installation
+- Modern Vue 3 with Composition API
+- Interactive calendar with date selection, event creation, editing, and deletion
+- Localization support using `vue-i18n`
+- FullCalendar plugins included:
+  - Day Grid (month view)
+  - Time Grid (week and day views)
+  - Event interaction (select, click)
+- Recommended Node.js version: **18**
+
+---
+
+## InstallationAdd commentMore actions
 
 ```bash
-git clone https://github.com/fullcalendar/fullcalendar-examples.git
-cd fullcalendar-examples/vue3
+git clone git@github.com:KosolapovAnatolii/vue-calendar-app.git
+cd vue-calendar-app
 npm install
 ```
 
-## Build Commands
+---
+
+## Development Server
+Recomended node version - 18
 
 ```bash
-npm run dev # builds and opens a web browser
-
-# other commands:
-npm run build # builds files into dist/ directory
-npm run clean # start fresh
+npm run build
+# or
+yarn build
 ```
