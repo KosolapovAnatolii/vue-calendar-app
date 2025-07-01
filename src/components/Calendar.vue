@@ -59,7 +59,7 @@ function handleDateSelect(selectInfo) {
   resetForm()
 
   isEdit.value = false
-  formData.date = selectInfo.startStr
+  formData.date = getDateFromFullDate(selectInfo.startStr)
   formData.allDay = selectInfo.allDay
   showDialog(selectInfo.jsEvent)
   selectInfo.view.calendar.unselect()
@@ -78,6 +78,7 @@ function handleEventClick(clickInfo) {
   formData.allDay = clickInfo.event.allDay
 
   showDialog(clickInfo.jsEvent)
+  clickInfo.jsEvent.stopPropagation()
 }
 
 function submitForm() {
@@ -116,6 +117,7 @@ function deleteEvent() {
 }
 
 function showDialog(event) {
+
   isShowDialog.value = true
 
   nextTick(() => {
